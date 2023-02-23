@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Bar Example</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		input[type=text] {
+			padding: 10px;
+			border: none;
+			border-radius: 3px;
+			margin-right: 10px;
+			font-size: 16px;
+		}
+		input[type=submit] {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        input[type=text] {
+            padding: 10px;
+            border: 1px solid black; /* Added black border */
+            border-radius: 3px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        input[type=submit] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        
+	</style>
+</head>
+<body>
+	<form action="/search" method="post">
+		<label for="search">Search:</label>
+		<input type="text" id="search" name="search">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
